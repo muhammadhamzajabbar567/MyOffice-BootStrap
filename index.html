@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>MyOfficeWork</title>
+  </head>
+  <body>
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand  badge bg-primary text-wrap" style="font-size: x-large;"  href="#">MyOffice</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <a class="nav-link active" aria-current="page" href="/about.html">About </a>
+          <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/job services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Job Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">MERN/MEAN STACK Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Computer Engineer</a></li>
+                  <li><a class="dropdown-item" href="#">Web Designer</a></li>
+                  <li><a class="dropdown-item" href="#">Graphic Designer</a></li>
+                  <li><a class="dropdown-item" href="#">Programming Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Software Engineer</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Admin Staff</a></li>
+                </ul>
+            </li>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+            <button class="btn btn-success" data-toggle="modal" data-target="#loginModal">Login</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <!-- Login Modal -->
+   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to MyOffice</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get an iCoder Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="cexampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1">
+                </div>
+                 
+                <button type="submit" class="btn btn-primary">Creat Account</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDER -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" >
+        <div class="carousel-item active">
+            <img src="Nav1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Welcome to iCoder</h2>
+                <p>Technology News, Development and Trends</p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Development</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+        </div>
+        <div class="carousel-item" >
+            <img src="Nav2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>The Best Coding Blog</h2>
+                <p>Technology News, Development and Trends</p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Development</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+        </div>
+        <div class="carousel-item" >
+            <img src="Nav 3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Award winning Blog</h2>
+                <p>Technology News, Development and Trends</p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Development</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+  </div>
+
+ 
+      <div class="container my=10" >
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col"md="6">
+              <div class="card">
+                <img src="fullstack.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Full Stack Develpment</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo doloremque veniam sint accusantium ipsam laboriosam.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" md =6>
+              <div class="card">
+                <img src="mern.jpg" width="200" height="250" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MERN Development</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui possimus cumque unde fugiat dolores quaerat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" md=6>
+              <div class="card">
+                <img src="ce.jpg" width="200" height="250" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Computer Engineer</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"md=6>
+              <div class="card">
+                <img src="gd.png" width="200" height="250" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Designer</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione minus officiis est ut dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-3 mb-3">
+              <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="MyOffice">
+               <img src="https://www.colourbox.com/preview/37626602-office-work-icon.jpg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img" alt="">
+                <span class="fs-5">MyOffice</span>
+              </a>
+              <ul class="list-unstyled small text-muted">
+                <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.1/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+                <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+                <li class="mb-2">Currently v5.1.1.</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Home</a></li>
+                <li class="mb-2"><a href="/docs/5.1/">Docs</a></li>
+                <li class="mb-2"><a href="/docs/5.1/examples/">Examples</a></li>
+                <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+                <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Guides</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/docs/5.1/getting-started/">Getting started</a></li>
+                <li class="mb-2"><a href="/docs/5.1/examples/starter-template/">Starter template</a></li>
+                <li class="mb-2"><a href="/docs/5.1/getting-started/webpack/">Webpack</a></li>
+                <li class="mb-2"><a href="/docs/5.1/getting-started/parcel/">Parcel</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Projects</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Community</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+                <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+                <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+                <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
+                <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
